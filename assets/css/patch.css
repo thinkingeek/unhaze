@@ -1,0 +1,11 @@
+.header{
+    overflow: hidden;
+}
+body{
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+}
+md-toolbar{
+    position: fixed;
+    z-index: 100;
+}

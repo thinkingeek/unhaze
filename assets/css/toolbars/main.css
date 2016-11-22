@@ -1,0 +1,69 @@
+.md-icon-button:not(.md-button){
+    position: relative;
+    overflow: visible;
+    padding:8px;
+    display: inline-block;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.md-icon-button:not(.md-button) .md-ripple-container{
+    overflow: visible;
+}
+.md-icon-button:not(.md-button) md-icon{
+    vertical-align: middle;
+}
+.brand{
+     font-family: 'Lobster Two', cursive;
+    padding:20px;
+ }
+md-toolbar .toolbar-tools{
+    display:flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding:15px;
+}
+md-toolbar .toolbar-tools .nav-links{
+    text-align: center;
+    position: relative;
+}
+.nav-links a md-icon{
+    vertical-align: middle;
+}
+.nav-links.category [category-route]{
+    font-family: "Flamenco", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding:15px 20px;
+    display: inline-block;
+    position: relative;
+    margin:0 5px;
+    cursor: pointer;
+}
+.nav-links.category{
+    display:flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    display: block; /* For Firefox */
+    color: rgba(255,255,255,0.5);
+}
+md-toolbar.main{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0.4+0,0.15+50,0+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.15) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.15) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}

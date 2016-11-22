@@ -1,0 +1,49 @@
+[
+  {
+    "id":"abc",
+    "title":"Hello World",
+    "subtext":"Well we make the world better by fast prototyping facilities.",
+    "background":"assets/img/carousel-static/4.jpg",
+    "caption":{
+      "css":{
+        "align-self": "flex-end"
+      },
+      "template": "<p>Compact Travel Bags. Just Perfect.</p>",
+      "animation":"SwiftUp"
+    }
+  },
+  {
+    "id":"abc",
+    "background":"assets/img/carousel-static/2.jpg",
+    "caption":{
+      "css":{
+        "align-self": "flex-start",
+        "transform-origin":"top"
+      },
+      "template": "<p>Explorer's Guide</p>",
+      "animation":"SwiftDown"
+    }
+  },
+  {
+    "id":"abc",
+    "background":"assets/img/carousel-static/1.jpg",
+    "caption":{
+      "css":{
+        "align-self": "flex-end"
+      },
+      "template": "<p>Show off your Formals!</p>",
+      "animation":"SwiftRight"
+    }
+  },
+  {
+    "id":"abc",
+    "background":"assets/img/carousel-static/3.png",
+    "caption":{
+      "css":{
+        "font-family": "\"Lobster Two\", cursive"
+      },
+      "template": "<p>We are Super Casual here!</p>",
+      "animation":"GrowScale"
+    }
+  }
+]

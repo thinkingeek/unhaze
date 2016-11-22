@@ -1,0 +1,28 @@
+[ui-view=page]{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:auto;
+    min-height: 100%;
+    -webkit-transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1);
+    -ms-transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1);
+    -o-transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1);
+}
+[ui-view].ng-enter{
+    opacity: 0;
+}
+[ui-view].ng-enter-active{
+    opacity: 1;
+}
+[ui-view].ng-leave-active{
+    opacity:0;
+}
+.ng-leave, .ng-leave-active{
+    z-index: 1;
+}
+.ng-enter, .ng-enter-active{
+    z-index: 2;
+}

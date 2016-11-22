@@ -1,0 +1,190 @@
+body{
+    margin:0;
+    padding:0;
+}
+.md-carousel{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    background: #eee;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    position: relative;
+}
+.md-carousel > .slides{
+    list-style: none;
+    padding: 0;
+    height:100%;
+    margin:0 !important;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    -webkit-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.md-carousel > .slides::-webkit-scrollbar{
+    height: 0;
+}
+.md-carousel > .slides > li{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    position: relative;
+    padding: 0 !important;
+
+}
+.md-carousel > .slides > li.active{
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.md-carousel > .slides > li > .img{
+    background: no-repeat center center;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-origin: border-box;
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.md-carousel > .slides > li > .caption{
+    z-index: 3;
+    position: relative;
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: center;
+    width: 100%;
+}
+.md-carousel > .slides > li > .caption > h2.title{
+    font-size: 5.9rem;
+    font-weight: 100;
+}
+.md-carousel > .slides > li > .caption > h3.subtext{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.6;
+}
+.md-carousel > .slides > li.color-white > .caption > h2.title, .md-carousel > .slides > li.color-white > .caption > h3.subtext{
+    color: #fff;
+}
+.md-carousel > .slides > li.color-dark > .caption > h2.title, .md-carousel > .slides > li.color-dark > .caption > h3.subtext{
+    color: #333;
+}
+.md-carousel > .slides > li > .backdrop-static {
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0; top:0; right:0; bottom:0;
+    visibility: visible;
+    background: #00695C;
+    opacity: 0.35;
+    z-index: 2;
+}
+.md-carousel > .carousel-control-box{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-between;
+    z-index: 4;
+    position: absolute;
+    height:100%;
+    overflow: hidden;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+}
+.md-carousel > .carousel-control-box > a{
+    color: #fff;
+    text-decoration: none;
+    padding: 13px;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-transition: all 0.4s cubic-bezier(.37,.39,0,.99);
+    -moz-transition: all 0.4s cubic-bezier(.37,.39,0,.99);
+    -ms-transition: all 0.4s cubic-bezier(.37,.39,0,.99);
+    -o-transition: all 0.4s cubic-bezier(.37,.39,0,.99);
+    transition: all 0.4s cubic-bezier(.37,.39,0,.99);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+.md-carousel > .carousel-control-box > a.right{
+    float: right;
+    position: relative;
+}
+.md-carousel > .carousel-control-box > a > i{
+    -webkit-transition: all 1.2s cubic-bezier(.37,.39,0,.99);
+    -moz-transition: all 1.2s cubic-bezier(.37,.39,0,.99);
+    -ms-transition: all 1.2s cubic-bezier(.37,.39,0,.99);
+    -o-transition: all 1.2s cubic-bezier(.37,.39,0,.99);
+    transition: all 1.2s cubic-bezier(.37,.39,0,.99);
+}
+.md-carousel > .carousel-control-box > a.left:hover > i{
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+    transform: translateX(50px);
+}
+.md-carousel > .carousel-control-box > a.left.clicked > i{
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-25px);
+    -webkit-transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+    -moz-transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+    -ms-transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+    -o-transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+    transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+}
+.md-carousel > .carousel-control-box > a.right:hover > i{
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px);
+}
+.md-carousel > .carousel-control-box > a.right.clicked > i{
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+    -webkit-transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+    -moz-transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+    -ms-transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+    -o-transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+    transition: all 0.25s cubic-bezier(.37,.39,0,.99);
+}
+
