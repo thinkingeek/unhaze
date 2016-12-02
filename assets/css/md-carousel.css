@@ -187,4 +187,8 @@ body{
     -o-transition: all 0.25s cubic-bezier(.37,.39,0,.99);
     transition: all 0.25s cubic-bezier(.37,.39,0,.99);
 }
+.go-down{
+    width: 80px !important;
+    height: 80px !important;
+}
 

@@ -1,4 +1,4 @@
-angular.module('unHaze', ['ngMaterial', 'ngMessages', 'ngAnimate','ui.router']);
+angular.module('unHaze', ['ngAnimate', 'ngMaterial', 'ngMessages','ui.router']);
 
 angular.module('unHaze').run(["$rootScope", function($rootScope){
     $rootScope.$on('$stateChangeStart',

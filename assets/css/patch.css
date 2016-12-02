@@ -4,8 +4,12 @@
 body{
     font-weight: 400;
     font-family: "Rubik", sans-serif;
+    position:relative;
 }
 md-toolbar{
     position: fixed;
     z-index: 11;
+}
+.md-dialog-container{
+    position: absolute !important;
 }
