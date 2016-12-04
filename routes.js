@@ -12,10 +12,10 @@ angular.module('unHaze')
                 },
                 title:'unHaze - Home',
                 onEnter: function($state){
-                    $('body').addClass($state.name);
+                    angular.element(document.querySelector('body')).addClass($state.name);
                 },
                 onExit: function($state){
-                    $('body').removeClass($state.name);
+                    angular.element(document.querySelector('body')).removeClass($state.name);
                 }
             })
             .state('search', {
@@ -28,11 +28,11 @@ angular.module('unHaze')
                 },
                 title:'unHaze - Search',
                 onEnter: function($state){
-                    $('body').addClass($state.name);
+                    angular.element(document.querySelector('body')).addClass($state.name);
 
                 },
                 onExit: function($state){
-                    $('body').removeClass($state.name);
+                    angular.element(document.querySelector('body')).removeClass($state.name);
                 }
             });
     });

@@ -13,3 +13,29 @@ md-toolbar{
 .md-dialog-container{
     position: absolute !important;
 }
+.md-fashion{
+    border:2px solid;
+    font-weight: 300;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    background: rgba(0,0,0,0) !important;
+}
+.md-fashion.light{
+    border-color: #fff;
+    color:#fff;
+}
+.md-fashion.dark{
+    border-color: #000;
+    color:#000;
+}
+.md-fashion.light .md-ripple-container .md-ripple{
+    background: #fff;
+}
+
+.md-fashion .md-ripple-container{
+    background: rgba(0,0,0,0) !important;
+}
+.md-fashion.dark .md-ripple-container .md-ripple{
+    background: #000;
+}

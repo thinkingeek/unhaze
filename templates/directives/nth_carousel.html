@@ -1,0 +1,20 @@
+<div class="nth-carousel">
+    <div class="slides" ng-style="{'width': (slides.length*100) + '%', 'transform': 'translateX(-' + (selectedIndex*100/slides.length) + '%)'}">
+        <div class="slide" ng-repeat="slide in slides track by $index" ng-class="{selected: selectedIndex == $index}">
+            <div class="caption">
+                <div class="caption-body" ng-style="slide.caption.css"  ng-class="slide.caption.animation">
+                    <div ng-if="slide.caption.template != undefined" ng-bind-html="slide.caption.template | trust_as_html"></div>
+                    <div ng-if="slide.caption.templateUrl != undefined" ng-include="slide.caption.templateUrl"></div>
+                </div>
+                <a class="redirect-backdrop" md-ink-ripple="#fff" ng-if="slide.redirectTo != undefined && slide.redirectTo != null" ng-href="{{slide.redirectTo}}"></a>
+            </div>
+            <img ng-src="{{slide.background}}">
+            <slide-backdrop></slide-backdrop>
+        </div>
+    </div>
+    <a class="control left" md-ink-ripple="#fff"><i class="material-icons">arrow_back</i></a>
+    <a class="control right" md-ink-ripple="#fff"><i class="material-icons">arrow_forward</i></a>
+    <ul class="indicator list-inline">
+        <li ng-repeat="indicator in slides track by $index" ng-click="setSelectedIndex($index)" ng-class="{selected: selectedIndex == $index}"></li>
+    </ul>
+</div>

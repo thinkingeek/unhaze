@@ -1,13 +1,12 @@
 angular.module('unHaze')
     .controller('toolbarController',
-        ["$scope", "$rootScope", '$element', '$mdSidenav', '$mdDialog',
-            function($scope, $rootScope, $element, $mdSidenav, $mdDialog){
-            $element.on('click', '.sidenav-toggle', function(){
-                $mdSidenav('left').toggle();
-            });
-            $element.on('click', '.search-route', function(ev){
-                $state.go('search');
-            })
+        ["$scope", "$rootScope", '$mdSidenav', '$mdDialog',
+            function($scope, $rootScope, $mdSidenav, $mdDialog){
+                var sidenavToggle = angular.element(document.querySelector('.sidenav-toggle'));
+
+                sidenavToggle.on('click', function(){
+                    $mdSidenav('left').toggle();
+                });
         }]
     );
 

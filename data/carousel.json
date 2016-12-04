@@ -1,6 +1,6 @@
 [
   {
-    "id":"abc",
+    "id":"caro1",
     "title":"Hello World",
     "subtext":"Well we make the world better by fast prototyping facilities.",
     "background":"assets/img/carousel-static/4.jpg",
@@ -8,42 +8,43 @@
       "css":{
         "align-self": "flex-end"
       },
-      "template": "<p>Compact Travel Bags. Just Perfect.</p>",
-      "animation":"SwiftUp"
+      "templateUrl": "templates/carousel-caption/caro1.html",
+      "animation":"RightParallax"
     }
   },
   {
-    "id":"abc",
+    "id":"caro2",
     "background":"assets/img/carousel-static/2.jpg",
     "caption":{
       "css":{
         "align-self": "flex-start",
         "transform-origin":"top"
       },
-      "template": "<p>Explorer's Guide</p>",
-      "animation":"SwiftDown"
+      "templateUrl": "templates/carousel-caption/caro2.html",
+      "animation":"RightParallax"
     }
   },
   {
-    "id":"abc",
+    "id":"caro3",
     "background":"assets/img/carousel-static/1.jpg",
     "caption":{
       "css":{
         "align-self": "flex-end"
       },
-      "template": "<p>Show off your Formals!</p>",
-      "animation":"SwiftRight"
+      "templateUrl": "templates/carousel-caption/caro3.html",
+      "animation":"RightParallax"
     }
   },
   {
-    "id":"abc",
+    "id":"caro4",
     "background":"assets/img/carousel-static/3.png",
     "caption":{
       "css":{
         "font-family": "\"Lobster Two\", cursive"
       },
-      "template": "<p>We are Super Casual here!</p>",
-      "animation":"GrowScale"
-    }
+      "template": "<p>Forget That Slide. Casual is Always Awesome!</p>",
+      "animation":"RightParallax"
+    },
+    "redirectTo":"#/search"
   }
 ]
