@@ -1,0 +1,30 @@
+.product-absolute-view{
+    overflow: hidden;
+    margin:15px;
+}
+.product-absolute-view h1{
+    font:400 45px "Flamenco", sans-serif;
+    color: #333;
+    padding:10px;
+    margin: 0;
+
+}
+.absolute-layout{
+    width:100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+.product-absolute-view .product-view{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}

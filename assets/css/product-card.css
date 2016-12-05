@@ -1,0 +1,63 @@
+.product-card{
+    display: inline-block;
+    width:300px;
+    position: relative;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15),0 1px 1px 0 rgba(0,0,0,.09),0 2px 1px -1px rgba(0,0,0,.07);
+}
+.product-img{
+    position: relative;
+    background: #444;
+}
+.product-img product-img-backdrop{
+    position: absolute;
+    left:0;top:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.product-img img{
+    width:300px;
+    position: relative;
+    z-index: 0;
+}
+.product-card md-card-actions{
+    position: absolute;
+    left:0; top:0;
+    z-index: 2;
+}
+.product-card md-card-actions a i{
+    color: #fff;
+}
+.product-card md-card-content md-divider{
+    width:80px;
+}
+.product-card md-card-content .product-price{
+    padding-bottom: 7px;
+    border-bottom:1px solid #ccc;
+    display: inline-block;
+    font:600 20px "Flamenco", sans-serif;
+
+}
+.product-card md-card-content .product-details{
+    font:600 13px "Flamenco", sans-serif;
+    color: #888;
+    text-transform: uppercase;
+    padding-top:7px;
+}
+.product-card md-card-content .product-details span:first-child{
+     padding-right: 10px;
+}
+.product-card md-card-content .product-details span:not(:first-child:last-child){
+    padding: 0 10px;
+}
+.product-card md-card-content .product-details span:last-child{
+    padding-left: 10px;
+}
+.product-card md-card-content .product-details span:not(:last-child){
+    border-right: 1px solid #ccc;
+}
+.product-card md-card-content .product-name{
+    padding-top:7px;
+    font:400 15px "Montserrat", sans-serif;
+}

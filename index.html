@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="google-site-verification" content="9IhR_rWvbC8pQqz9YOUVjxspBmPwixZ4BE_v6S36roA" />
     <!--Src-->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
     <!--Assets-->
     <link href="assets/css/patch.css" rel="stylesheet">
     <link href="assets/css/toolbars/main.css" rel="stylesheet">
     <link href="assets/css/route-animation.css" rel="stylesheet">
     <link href="assets/css/sidenav.css" rel="stylesheet">
     <link href="assets/css/nth-carousel.css" rel="stylesheet">
+    <link href="assets/css/product-absolute-view.css" rel="stylesheet">
+    <link href="assets/css/product-card.css" rel="stylesheet">
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Flamenco:300,400|Lobster+Two:700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,900"
+    <link href="assets/fonts/montserrat-alternates.css"
+          rel="stylesheet">
+    <link href="assets/fonts/montserrat.css"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco:300,400|Lobster"
           rel="stylesheet">
     <!--Material Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -30,7 +35,6 @@
 </md-sidenav>
 <div class="popup-container"></div>
 <!--Src-->
-<!--<script src="src/js/jquery.js"></script>-->
 <script src="src/js/angular.min.js"></script>
 <script src="src/js/angular-animate.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
@@ -39,12 +43,12 @@
 <script src="src/js/angular-ui-router.min.js"></script>
 <!--Assets-->
 <script src="assets/js/patch.js"></script>
+<script src="assets/js/offset.js"></script>
 <!--Angular Basics-->
 <script src="app.js"></script>
 <script src="routes.js"></script>
 <!--Services-->
 <script src="services/$data.js"></script>
-<script src="services/$page.js"></script>
 <!--Controllers-->
 <script src="controllers/pages/home.js"></script>
 <script src="controllers/pages/search.js"></script>

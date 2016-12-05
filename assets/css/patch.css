@@ -5,6 +5,7 @@ body{
     font-weight: 400;
     font-family: "Rubik", sans-serif;
     position:relative;
+    background: #eee;
 }
 md-toolbar{
     position: fixed;
@@ -38,4 +39,10 @@ md-toolbar{
 }
 .md-fashion.dark .md-ripple-container .md-ripple{
     background: #000;
+}
+md-content{
+    background: #eee;
+}
+nth-carousel{
+    display: block
 }

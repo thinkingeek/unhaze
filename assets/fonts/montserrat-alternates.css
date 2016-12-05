@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 100;
+    src: url(monserrat_alternates/thin.otf);
+}
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 200;
+    src: url(monserrat_alternates/extralight.otf);
+}
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 300;
+    src: url(monserrat_alternates/light.otf);
+}
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    src: url(monserrat_alternates/regular.otf);
+}
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    src: url(monserrat_alternates/medium.otf);
+}
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    src: url(monserrat_alternates/semibold.otf);
+}
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 700;
+    src: url(monserrat_alternates/bold.otf);
+}
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 800;
+    src: url(monserrat_alternates/extrabold.otf);
+}
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 900;
+    src: url(monserrat_alternates/black.otf);
+}
