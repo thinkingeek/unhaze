@@ -1,0 +1,29 @@
+.category-poster{
+    height:300px;
+    left:0;top:0;
+    background:#333;
+    background-size: cover;
+    position:relative;
+}
+.category-name{
+    width:100%;
+    height:100%;
+    font: 400 40px "Flamenco", sans-serif;
+    color:#fff;
+    left:0;top:0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.category-name small{
+    text-transform: uppercase;
+}
+.category-icon{
+    height: 100px;
+    width: 100px;
+}
+.category-toolbar{
+    background: transparent !important;
+}

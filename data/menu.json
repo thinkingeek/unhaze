@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Women",
+    "route": "women",
+    "icon": "assets/img/menu/ic_woman.svg"
+  },
+  {
+    "name": "Men",
+    "route": "men",
+    "icon": "assets/img/menu/ic_man.svg"
+  },
+  {
+    "name": "Boys",
+    "route": "boys",
+    "icon": "assets/img/menu/ic_boy.svg"
+  },
+  {
+    "name": "Girls",
+    "route": "girls",
+    "icon": "assets/img/menu/ic_girl.svg"
+  },
+  {
+    "name": "Babies",
+    "route": "babies",
+    "icon": "assets/img/menu/ic_baby.svg"
+  },
+  {
+    "name": "Accessories",
+    "route": "accessories",
+    "icon": "assets/img/menu/ic_accessory.svg"
+  }
+]

@@ -1,0 +1,109 @@
+menu{
+    padding:0;
+    margin:0;
+}
+.brand-poster{
+    height:150px;
+    left:0;top:0;
+    background:#3B4D57 url("../img/sidenav/brand-poster-backdrop.svg") no-repeat center center;
+    background-size: cover;
+    position:relative;
+}
+[ui-view] > .brand-poster{
+    height:250px;
+}
+.brand-name{
+    width:100%;
+    height:100%;
+    font: 400 40px "Flamenco", sans-serif;
+    color:#fff;
+    left:0;top:0;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.brand-name .divider.small{
+    height:4px;
+    width:35px;
+    margin: 5px;
+    background: #fff;
+}
+.brand-name small{
+    font-size:30px;
+}
+menu > .sidenav-menu{
+    padding:0;
+    margin:0;
+}
+menu > .sidenav-menu a{
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    user-focus: none;
+    user-select: none;
+}
+.sidenav-menu a{
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    user-focus: none;
+    user-select: none;
+    padding:15px;
+}
+.sidenav-menu a .md-ripple.md-ripple-active{
+    opacity: 0.1;
+}
+menu > .sidenav-menu img{
+    width: 42px;
+    height: 42px;
+}
+menu > .sidenav-menu span.label {
+    font: 500 16px "Montserrat", sans-serif;
+    padding: 0 25px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.sidenav-menu a span.label{
+     font: 500 16px "Montserrat", sans-serif;
+     padding:0 25px;
+     color:rgba(0,0,0,0.7);
+ }
+
+[ui-view] > .sidenav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:15px;
+}
+[ui-view] > .sidenav-menu a{
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 1px #ccc;
+    min-width: 153px;
+    -webkit-transition: all .3s cubic-bezier(.25,.8,.25,1);
+    -moz-transition: all .3s cubic-bezier(.25,.8,.25,1);
+    -ms-transition: all .3s cubic-bezier(.25,.8,.25,1);
+    -o-transition: all .3s cubic-bezier(.25,.8,.25,1);
+    transition: all .3s cubic-bezier(.25,.8,.25,1);
+    margin:15px;
+    background: #fff;
+}
+[ui-view] > .sidenav-menu a:hover, [ui-view] > .sidenav-menu a:active{
+    box-shadow: 0 4px 4px #aaa;
+}
+[ui-view] > .sidenav-menu img{
+    width: 56px;
+    height: 56px;
+}
+[ui-view] > .sidenav-menu a span.label{
+    padding:15px;
+}

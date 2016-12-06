@@ -34,5 +34,27 @@ angular.module('unHaze')
                 onExit: function($state){
                     angular.element(document.querySelector('body')).removeClass($state.name);
                 }
+            })
+            .state('categories',{
+                'url': '/categories',
+                'views':{
+                    "page":{
+                        templateUrl: 'templates/directives/menu.html',
+                        controller: 'menuCtrl'
+                    }
+                }
+            })
+            .state('categoryspecific',{
+                'url': '/categories/:category',
+                'params':{
+                    'category':null,
+                    'state':null
+                },
+                'views':{
+                    "page":{
+                        templateUrl: 'templates/pages/category.html',
+                        controller: 'categoryPageCtrl'
+                    }
+                }
             });
     });

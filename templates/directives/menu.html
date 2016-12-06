@@ -1,0 +1,19 @@
+<md-toolbar ng-if="stateName == 'categories'" style="background: transparent !important;" ng-controller="toolbarController">
+    <div class="toolbar-tools">
+        <a class="md-icon-button" ng-click="$state.go('home')" md-ink-ripple="#fff"><i class="material-icons">home</i></a>
+    </div>
+</md-toolbar>
+<div class="brand-poster">
+    <div class="brand-name">
+        <span>unHaze</span>
+        <div class="divider small"></div>
+        <small><span ng-if="stateName == 'categories'">Categories</span></small>
+    </div>
+
+</div>
+<div class="sidenav-menu">
+    <a md-ink-ripple="#000" ng-click="go(this, menuItem.route, menuItem.icon)" ng-repeat="menuItem in menu track by $index">
+        <img ng-src="{{menuItem.icon}}">
+        <span class="label" ng-bind="menuItem.name"></span>
+    </a>
+</div>

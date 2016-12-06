@@ -1,0 +1,13 @@
+<md-toolbar class="category-toolbar" ng-controller="toolbarController">
+    <div class="toolbar-tools">
+        <a class="md-icon-button" ng-click="back()" md-ink-ripple="#fff"><i class="material-icons">arrow_backward</i></a>
+    </div>
+</md-toolbar>
+<div class="category-poster">
+    <div class="category-name">
+        <img class="category-icon" ng-src="{{category.icon}}">
+        <div class="divider small"></div>
+        <small ng-bind="category.name"></small>
+    </div>
+
+</div>

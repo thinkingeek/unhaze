@@ -1,10 +1,13 @@
 angular.module('unHaze')
     .controller('toolbarController',
-        ["$scope", "$rootScope", '$mdSidenav', '$window', '$element',
-            function($scope, $rootScope, $mdSidenav, $window, $element){
+        ["$scope", "$rootScope", '$mdSidenav', '$window', '$element', '$mdDialog',
+            function($scope, $rootScope, $mdSidenav, $window, $element, $mdDialog){
                 var sidenavToggle = angular.element(document.querySelector('.sidenav-toggle'));
                 sidenavToggle.on('click', function(){
-                    $mdSidenav('left').toggle();
+                    $mdSidenav('left').toggle()
+                        .then(function(){
+                            angular.element(document.getElementsByTagName('body')).toggleClass('noscroll')
+                        })
                 });
 
                 angular.element($window).bind('scroll', function(){
@@ -21,5 +24,22 @@ angular.module('unHaze')
                         });
                     }
                 });
+
+                angular.element(document.querySelector('.signup-popup')).on('click', function($event){
+                    $mdDialog.show({
+                            controller: 'loginDialogCtrl',
+                            templateUrl: 'templates/dialogs/login.html',
+                            parent: angular.element(document.body),
+                            targetEvent: $event,
+                            clickOutsideToClose:true
+                        })
+                        .then(function(answer) {
+                            $scope.status = 'You said the information was "' + answer + '".';
+                        }, function() {
+                            $scope.status = 'You cancelled the dialog.';
+                        });
+                });
+
+
         }]
     );

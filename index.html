@@ -13,6 +13,8 @@
     <link href="assets/css/nth-carousel.css" rel="stylesheet">
     <link href="assets/css/product-absolute-view.css" rel="stylesheet">
     <link href="assets/css/product-card.css" rel="stylesheet">
+    <link href="assets/css/menu.css" rel="stylesheet">
+    <link href="assets/css/category-page.css" rel="stylesheet">
     <!--Fonts-->
     <link href="assets/fonts/montserrat-alternates.css"
           rel="stylesheet">
@@ -29,8 +31,8 @@
 </head>
 <body>
 <div ui-view="page"></div>
-<md-sidenav md-component-id="left">
-    <div class="menu" ng-include="templates/menu.html"></div>
+<md-sidenav md-component-id="left" md-whiteframe="10">
+    <menu></menu>
 </md-sidenav>
 <div class="popup-container"></div>
 <!--Src-->
@@ -51,10 +53,13 @@
 <!--Controllers-->
 <script src="controllers/pages/home.js"></script>
 <script src="controllers/pages/search.js"></script>
+<script src="controllers/pages/category.js"></script>
 <script src="controllers/toolbar.js"></script>
 <script src="controllers/nthCarousel.js"></script>
+<script src="controllers/menu.js"></script>
 <!--Directive-->
 <script src="directives/nth-carousel.js"></script>
+<script src="directives/menu.js"></script>
 <!--Filters-->
 <script src="filters/trust_as_html.js"></script>
 </body>
