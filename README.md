@@ -15,4 +15,6 @@ Well I am building a complete Fashion E-Commerce Template.
 1) Atom
 2) Google Fonts
 3) Material Icons
+
+## Demo
 https://geekosk.github.io/unhaze
