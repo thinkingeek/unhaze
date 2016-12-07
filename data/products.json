@@ -1,0 +1,28 @@
+[
+  {
+    "id": "black_double-breasted_longline_coat_men_anthony_morato",
+    "domain":"black_double_breasted_longline_coat",
+    "title": "Black Double-Breasted Longline Coat",
+    "brandName": "Anthony Morato",
+    "brandId": "anthony_morato",
+    "idealFor": "men",
+    "type": "coat",
+    "price": {
+      "amount": 294.69,
+      "currency": "dollar"
+    },
+    "description": "This coat from Antony Morato is a perfect blend of style and comfort. Wear it with a shirt pair of jeans and boots for a stylish look.",
+    "specs": {
+      "pattern":"solid",
+      "colors": ["black"],
+      "Ideal For":"men",
+      "Fit":"Regular Fit",
+      "Sleeve":"Full Sleeve",
+      "length": "Full Length",
+      "Fabric":"Shell: 61% wool, 29% polyester, 4% acrylic, 3% viscose, and 3% polyamide.<br/>Lining 1: 52% polyester, 48% viscose.<br />Lining 2: 100% polyester",
+      "Fabric Care":"Dry Cleaning.",
+      "details": "Black longline coat, has a notched lapel, double-breasted with button closures, long sleeves button closures, structured shoulders, three pockets, an attached lining with a welt pocket, and a vented back hem."
+    },
+    "favorite": true
+  }
+]

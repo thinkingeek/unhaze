@@ -1,13 +1,31 @@
 <md-toolbar class="category-toolbar" ng-controller="toolbarController">
     <div class="toolbar-tools">
-        <a class="md-icon-button" ng-click="back()" md-ink-ripple="#fff"><i class="material-icons">arrow_backward</i></a>
+        <a class="md-icon-button back-icon-button" ng-click="back()" md-ink-ripple="#fff"><i class="material-icons">arrow_backward</i></a>
+        <img class="category-icon" ng-src="{{category.icon}}">
+        <span ng-bind="category.name"></span>
     </div>
 </md-toolbar>
-<div class="category-poster">
-    <div class="category-name">
-        <img class="category-icon" ng-src="{{category.icon}}">
-        <div class="divider small"></div>
-        <small ng-bind="category.name"></small>
+<md-content class="category-content" ng-controller="productsCtrl as self">
+    <div class="product-absolute-view">
+        <div class="absolute-layout">
+            <div class="product-view">
+                <md-card class="product-card" ng-repeat="product in categorisedProducts(category.route) track by $index">
+                    <md-card-actions>
+                        <a class="md-icon-button favorite" aria-label="Favorite">
+                            <i class="material-icons">favorite</i>
+                        </a>
+                    </md-card-actions>
+                    <div class="product-img">
+                        <product-img-backdrop></product-img-backdrop>
+                        <img class="md-card-image" ng-src="{{'data/static/product_images/'+ product.id + '/1.jpg'}}">
+                    </div>
+                    <md-card-content>
+                        <div class="product-price" ng-bind-html="product.price.amount | currency:'&'+ product.price.currency + ';' | trust_as_html"></div>
+                        <div class="product-name" ng-bind="product.brandName"></div>
+                        <div class="product-details"><span style="margin:0;padding:0;" class="product-brand" ng-bind="product.title"></span></div>
+                    </md-card-content>
+                </md-card>
+            </div>
+        </div>
     </div>
-
-</div>
+</md-content>

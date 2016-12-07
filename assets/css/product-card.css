@@ -1,23 +1,26 @@
 .product-card{
     display: inline-block;
-    width:300px;
     position: relative;
+    max-width: 200px;
     box-shadow: 0 1px 1px #ccc;
 }
 .product-img{
     position: relative;
     background: #444;
+    height:230px;
+    overflow: hidden;
+    display: block;
 }
 .product-img product-img-backdrop{
     position: absolute;
     left:0;top:0;
     width:100%;
     height:100%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0);
     z-index: 1;
 }
 .product-img img{
-    width:300px;
+    width:100%;
     position: relative;
     z-index: 0;
 }
@@ -25,30 +28,35 @@
     position: absolute;
     left:0; top:0;
     z-index: 2;
+    width:100%;
+    margin:0;
+}
+.product-card md-card-actions a{
+    margin:5px;
 }
 .product-card md-card-actions a i{
-    color: #fff;
+    color: #000;
 }
 .product-card md-card-content md-divider{
     width:80px;
 }
 .product-card md-card-content .product-price{
-    padding-bottom: 7px;
-    border-bottom:1px solid #ccc;
+    padding-bottom: 5px;
     display: inline-block;
-    font:600 20px "Flamenco", sans-serif;
-
+    font:700 14px "Montserrat", sans-serif;
 }
 .product-card md-card-content .product-details{
-    font:600 13px "Flamenco", sans-serif;
+    font:600 14px "Flamenco", sans-serif;
     color: #888;
-    text-transform: uppercase;
     padding-top:7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .product-card md-card-content .product-details span:first-child{
      padding-right: 10px;
 }
-.product-card md-card-content .product-details span:not(:first-child:last-child){
+.product-card md-card-content .product-details span:not(:first-child):not(:last-child){
     padding: 0 10px;
 }
 .product-card md-card-content .product-details span:last-child{
@@ -58,6 +66,8 @@
     border-right: 1px solid #ccc;
 }
 .product-card md-card-content .product-name{
-    padding-top:7px;
-    font:400 15px "Montserrat", sans-serif;
+    font:300 15px "Montserrat", sans-serif;
+}
+.product-card md-card-actions .favorite i{
+    color: #D32F2F;
 }

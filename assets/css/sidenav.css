@@ -1,3 +1,14 @@
 md-sidenav{
     z-index: 10000;
 }
+md-sidenav.md-closed menu{
+    opacity: 0;
+}
+md-sidenav menu{
+    opacity: 1;
+    -webkit-transition: 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    -moz-transition: 0.5s cubic-bezier(0.55, 0, 0.1, 1) ;
+    -ms-transition: 0.5s cubic-bezier(0.55, 0, 0.1, 1) ;
+    -o-transition: 0.5s cubic-bezier(0.55, 0, 0.1, 1) ;
+    transition: 0.5s cubic-bezier(0.55, 0, 0.1, 1) ;
+}

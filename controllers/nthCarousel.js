@@ -2,7 +2,6 @@ angular.module('unHaze').controller('nthCarouselCtrl', ['$scope', '$data',
     function($scope, $data){
         $data.carousel(function(data){
             $scope.slides = data;
-            console.log($scope.slides);
             $scope.selectedIndex = 0;
         });
         var controlLeft = angular.element(document.querySelector('.control.left'));

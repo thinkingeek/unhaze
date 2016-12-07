@@ -37,12 +37,9 @@
   },
   {
     "id":"caro4",
-    "background":"assets/img/carousel-static/3.png",
+    "background":"assets/img/carousel-static/3.jpg",
     "caption":{
-      "css":{
-        "font-family": "\"Lobster Two\", cursive"
-      },
-      "template": "<p>Forget That Slide. Casual is Always Awesome!</p>",
+      "template": "<p><h2>Nostalgia!</h2> Get your kids the same designs you wore in your childhood.</p>",
       "animation":"RightParallax"
     },
     "redirectTo":"#/search"
