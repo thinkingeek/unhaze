@@ -10,6 +10,6 @@ angular.module('unHaze')
             $scope.go = function($element, category){
                 $state.go('categoryspecific', {'category': category, state: $scope.stateName});
                 $mdSidenav('left').close();
-            }
+            };
         }]
     );

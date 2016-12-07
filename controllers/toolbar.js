@@ -6,7 +6,9 @@ angular.module('unHaze')
                 sidenavToggle.on('click', function(){
                     $mdSidenav('left').toggle()
                         .then(function(){
-                            angular.element(document.getElementsByTagName('body')).toggleClass('noscroll')
+                            if(!angular.element(document.getElementsByTagName('menu')).hasClass('loaded')){
+                                angular.element(document.getElementsByTagName('menu')).addClass('loaded');
+                            }
                         })
                 });
 
