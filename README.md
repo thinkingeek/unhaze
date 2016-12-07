@@ -12,11 +12,14 @@ Well I am building a complete Fashion E-Commerce Template.
 
 ### Fonts Inside
 1) Montserrat
+
 2) Flamenco
 
 ### Tools Used
 1) Atom
+
 2) Google Fonts
+
 3) Material Icons
 
 ## Demo
