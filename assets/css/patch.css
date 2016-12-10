@@ -8,7 +8,7 @@ body{
     background: #eee;
 }
 md-toolbar{
-    position: fixed;
+    position: absolute;
     z-index: 11;
 }
 .md-dialog-container{
@@ -45,4 +45,22 @@ md-content{
 }
 nth-carousel{
     display: block
+}
+md-content.parent-content{
+    height: 100vh;
+    width:100%;
+    overflow-y: scroll;
+}
+.toolbar-opaque md-content.parent-content .container{
+    -webkit-transform: translateY(-70px);
+    -moz-transform: translateY(-70px);
+    -ms-transform: translateY(-70px);
+    -o-transform: translateY(-70px);
+    transform: translateY(-70px);
+}
+body, html{
+    overflow: hidden !important;
+}
+.none{
+    opacity: 0;
 }

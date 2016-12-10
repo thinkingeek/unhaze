@@ -12,34 +12,29 @@ angular.module('unHaze')
                         })
                 });
 
-                angular.element($window).bind('scroll', function(){
-                    var toolbarHeightTarget = getOffset(document.querySelector('.main-content')).top;
-                    if(this.pageYOffset <= toolbarHeightTarget){
-                        var relativeHeight = this.pageYOffset*0.7/toolbarHeightTarget;
-                        $element.css({
-                            'background': 'linear-gradient(to bottom,  rgba(0,0,0,'+ (relativeHeight + 0.4) +') 0%, rgba(0,0,0,'+ relativeHeight +') 100%)'
-                        });
+                angular.element(document.querySelector('.parent-content')).bind('scroll', function(){
+                    var toolbarHeightTarget = 140;
+                    if(this.scrollTop >= toolbarHeightTarget){
+                        $element.addClass('opaque');
+                        angular.element(document.getElementsByTagName('body')).addClass('toolbar-opaque');
+
                     }
-                    if(this.pageYOffset > toolbarHeightTarget){
-                        $element.css({
-                            'background': 'linear-gradient(to bottom,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%)'
-                        });
+                    else if(this.scrollTop < toolbarHeightTarget && $element.hasClass('opaque')){
+                        $element.removeClass('opaque');
+                        angular.element(document.getElementsByTagName('body')).removeClass('toolbar-opaque')
                     }
                 });
 
                 angular.element(document.querySelector('.signup-popup')).on('click', function($event){
                     $mdDialog.show({
-                            controller: 'loginDialogCtrl',
-                            templateUrl: 'templates/dialogs/login.html',
+                            template: '<md-dialog><h1>Hello World!</h1></md-dialog>',
                             parent: angular.element(document.body),
-                            targetEvent: $event,
                             clickOutsideToClose:true
                         })
-                        .then(function(answer) {
-                            $scope.status = 'You said the information was "' + answer + '".';
-                        }, function() {
-                            $scope.status = 'You cancelled the dialog.';
+                        .finally(function() {
+                            console.log("Hello World!!")
                         });
+
                 });
 
 

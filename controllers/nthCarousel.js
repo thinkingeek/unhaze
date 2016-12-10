@@ -3,7 +3,7 @@ angular.module('unHaze').controller('nthCarouselCtrl', ['$scope', '$data',
         $data.carousel(function(data){
             $scope.slides = data;
             $scope.selectedIndex = 0;
-        });
+        }, $scope);
         var controlLeft = angular.element(document.querySelector('.control.left'));
         var controlRight = angular.element(document.querySelector('.control.right'));
         var indicator = angular.element(document.querySelector('.indicator li'));

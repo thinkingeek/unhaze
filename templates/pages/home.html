@@ -1,50 +1,56 @@
-<md-toolbar class="main" ng-controller="toolbarController">
-    <div class="toolbar-tools">
-        <div class="nav-links">
-            <a class="sidenav-toggle md-icon-button" md-ink-ripple="#fff">
-                <md-icon>menu</md-icon>
-            </a>
-            <span class="brand">unHaze</span>
-        </div>
-        <div class="nav-links">
-            <a class="search-route md-icon-button" ui-sref="search" md-ink-ripple="#fff">
-                <md-icon>search</md-icon>
-            </a>
-            <a class="cart-route md-icon-button" md-ink-ripple="#fff">
-                <md-icon>shopping_cart</md-icon>
-            </a>
-            <a class="signup-popup md-icon-button" md-ink-ripple="#fff">
-                <md-icon>account_circle</md-icon>
-            </a>
-        </div>
-    </div>
-</md-toolbar>
-<md-content class="parent-content">
-    <nth-carousel></nth-carousel>
-    <md-content class="main-content" ng-controller="productsCtrl as self">
-        <div class="product-absolute-view">
-            <h1>Fashionable Four!</h1>
-            <div class="absolute-layout">
-                <div class="product-view">
-                    <md-card class="product-card" ng-repeat="product in products track by $index">
-                        <md-card-actions>
-                            <a class="md-icon-button favorite" aria-label="Favorite">
-                                <i class="material-icons">favorite</i>
-                            </a>
-                        </md-card-actions>
-                        <div class="product-img">
-                            <product-img-backdrop></product-img-backdrop>
-                            <img class="md-card-image" ng-src="{{'data/static/product_images/'+ product.id + '/1.jpg'}}">
-                        </div>
-                        <md-card-content>
-                            <div class="product-price" ng-bind-html="product.price.amount | currency:'&'+ product.price.currency + ';' | trust_as_html"></div>
-                            <div class="product-name" ng-bind="product.brandName"></div>
-                            <div class="product-details"><span style="margin:0;padding:0;" class="product-brand" ng-bind="product.title"></span></div>
-                        </md-card-content>
-                    </md-card>
-                </div>
+<div layout="column" layout-fill>
+    <md-toolbar class="main"
+                ng-controller="toolbarController">
+        <div class="toolbar-tools">
+            <div class="nav-links">
+                <a class="sidenav-toggle md-icon-button" md-ink-ripple="rgba(0,0,0,0.1)">
+                    <md-icon>menu</md-icon>
+                </a>
+                <span class="brand">unHaze</span>
+            </div>
+            <div class="nav-links">
+                <a class="search-route md-icon-button" ui-sref="search" md-ink-ripple="rgba(0,0,0,0.1)">
+                    <md-icon>search</md-icon>
+                </a>
+                <a class="cart-route md-icon-button" md-ink-ripple="rgba(0,0,0,0.1)">
+                    <md-icon>shopping_cart</md-icon>
+                </a>
+                <a class="signup-popup md-icon-button" md-ink-ripple="rgba(0,0,0,0.1)">
+                    <md-icon>account_circle</md-icon>
+                </a>
             </div>
         </div>
-        <md-divider></md-divider>
+    </md-toolbar>
+    <md-content class="parent-content" md-scroll-y layout="column" flex="1">
+        <div class="container">
+            <nth-carousel></nth-carousel>
+            <div class="main-content" ng-controller="productsCtrl as self">
+                <div class="product-absolute-view">
+                    <h1>Fashionable Four!</h1>
+                    <div class="absolute-layout">
+                        <div class="product-view">
+                            <md-card class="product-card" ng-repeat="product in products track by $index">
+                                <md-card-actions>
+                                    <a class="md-icon-button favorite" aria-label="Favorite">
+                                        <i class="material-icons">favorite</i>
+                                    </a>
+                                </md-card-actions>
+                                <div class="product-img">
+                                    <product-img-backdrop></product-img-backdrop>
+                                    <img class="md-card-image" ng-src="{{'data/static/product_images/'+ product.id + '/1.jpg'}}">
+                                </div>
+                                <md-card-content>
+                                    <div class="product-price" ng-bind-html="product.price.amount | currency:'&'+ product.price.currency + ';' | trust_as_html"></div>
+                                    <div class="product-name" ng-bind="product.brandName"></div>
+                                    <div class="product-details"><span style="margin:0;padding:0;" class="product-brand" ng-bind="product.title"></span></div>
+                                </md-card-content>
+                            </md-card>
+                        </div>
+                    </div>
+                </div>
+                <md-divider></md-divider>
+            </>
+        </div>
     </md-content>
-</md-content>
+</div>
+

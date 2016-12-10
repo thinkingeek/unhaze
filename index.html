@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="unHaze">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -27,8 +27,8 @@
           rel="stylesheet">
     <title></title>
 </head>
-<body>
-<div ui-view="page"></div>
+<body  ng-app="unHaze">
+<div ui-view="page" auto-scroll="true"></div>
 <md-sidenav md-component-id="left" md-whiteframe="10">
     <menu></menu>
 </md-sidenav>
@@ -48,6 +48,7 @@
 <script src="routes.js"></script>
 <!--Services-->
 <script src="services/$data.js"></script>
+<script src="services/preloader.js"></script>
 <!--Controllers-->
 <script src="controllers/pages/home.js"></script>
 <script src="controllers/pages/search.js"></script>
