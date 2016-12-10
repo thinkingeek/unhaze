@@ -1,6 +1,7 @@
 angular.module('unHaze', ['ngAnimate', 'ngMaterial', 'ngMessages','ui.router']);
 
 angular.module('unHaze').run(["$rootScope", "$window", function($rootScope, $window){
+    angular.element(document.querySelector('body')).addClass('loading');
     $rootScope.$on('$stateChangeStart',
         function(event, toState, toParams){
             if(toState.title != undefined){

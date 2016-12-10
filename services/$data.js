@@ -1,5 +1,5 @@
 angular.module('unHaze')
-    .service('$data',["$http", "preloader", function($http, preloader){
+    .service('$data',["$http", "preloader", "$rootScope", function($http, preloader, $rootScope){
         var $this = this,
             $baseUrl = "data/";
         $this.carousel = function(callback, $scope){
@@ -14,8 +14,7 @@ angular.module('unHaze')
                             function handleResolve( imageLocations ) {
                                 // Loading was successful.
                                 $scope.isLoading = false;
-                                $scope.isSuccessful = true;
-                                console.log( "Preload Successful" );
+                                angular.element(document.querySelector('body')).removeClass('loading');
                             },
                             function handleReject( imageLocation ) {
                                 // Loading failed on at least one image.
