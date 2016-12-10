@@ -1,5 +1,5 @@
 angular.module('unHaze')
-    .service('$data',["$http", "preloader", "$rootScope", function($http, preloader, $rootScope){
+    .service('$data',["$http", "$preloader", "$rootScope", function($http, $preloader, $rootScope){
         var $this = this,
             $baseUrl = "data/";
         $this.carousel = function(callback, $scope){
@@ -10,7 +10,7 @@ angular.module('unHaze')
                         for(var i = 0; i < d.length; i++){
                             imageLocations.push(d[i].background);
                         }
-                        preloader.preloadImages( imageLocations ).then(
+                        $preloader.preloadImages( imageLocations ).then(
                             function handleResolve( imageLocations ) {
                                 // Loading was successful.
                                 $scope.isLoading = false;

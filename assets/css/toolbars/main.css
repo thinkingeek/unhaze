@@ -85,3 +85,9 @@ md-toolbar.main.opaque .nav-links a md-icon{
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+md-toolbar.main:not(.opaque) a .md-ripple-container .md-ripple{
+    background: rgba(255,255,255,1) !important;
+}
+md-toolbar.main .toolbar-tools{
+    padding:15px 30px;
+}

@@ -1,5 +1,5 @@
 angular.module('unHaze').factory(
-    "preloader",[ '$q', '$rootScope',
+    "$preloader",[ '$q', '$rootScope',
     function( $q, $rootScope ) {
         // I manage the preloading of image objects. Accepts an array of image URLs.
         function Preloader( imageLocations ) {

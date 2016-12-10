@@ -1,3 +1,10 @@
+button.md-icon-button{
+    position: relative;
+    padding:8px;
+    border:none;
+    background: none;
+    outline: none;
+}
 .header{
     overflow: hidden;
 }

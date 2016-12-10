@@ -15,9 +15,21 @@
                 <a class="cart-route md-icon-button" md-ink-ripple="rgba(0,0,0,0.1)">
                     <md-icon>shopping_cart</md-icon>
                 </a>
-                <a class="signup-popup md-icon-button" md-ink-ripple="rgba(0,0,0,0.1)">
-                    <md-icon>account_circle</md-icon>
-                </a>
+                <md-menu class="width-12" md-position-mode="target-right target" md-offset="-60px 15px">
+                    <a ng-click="$mdOpenMenu($event)" class="md-icon-button" md-ink-ripple="rgba(0,0,0,0.1)" aria-label="Open sample menu">
+                        <md-icon>account_circle</md-icon>
+                    </a>
+                    <md-menu-content  style="padding: 0 15px;">
+                        <form class="emailValidationForm">
+                            <md-input-container>
+                                <input md-autofocus ng-model="user.email" type="email" placeholder="What's Your Email ID?" ng-required="true">
+                            </md-input-container>
+                            <button type="submit" md-prevent-menu-close="md-prevent-menu-close" class="md-icon-button" style="width:auto; height:auto;" md-ink-ripple="rgba(0,0,0,0.1)" >
+                                <md-icon>arrow_forward</md-icon>
+                            </button>
+                        </form>
+                    </md-menu-content>
+                </md-menu>
             </div>
         </div>
     </md-toolbar>
