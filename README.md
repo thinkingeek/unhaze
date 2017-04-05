@@ -1,6 +1,6 @@
 # unHaze
 Well I am building a complete Fashion E-Commerce Template.
-### [Demo](https://geekosk.github.io/unhaze)
+### [Demo](https://itsosk.github.io/unhaze)
 ### Required APIs
 1) [AngularJS](https://angularjs.org/)
 
